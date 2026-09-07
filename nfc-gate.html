@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="oMBy4zSH0oqC3JtYPQAJzM">
+<head data-page-node-id="xJulDlsuJZJnncRuD0QZ36">
+  <meta charset="UTF-8" data-page-node-id="fcLlSLGPEJfl1u1vTQwhfH">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" data-page-node-id="yMqpHZdFhi8bM1mXuHxG1M">
+  <meta name="apple-mobile-web-app-capable" content="yes" data-page-node-id="Zog7poLGn4sQoUCnJS2D3O">
+  <meta name="theme-color" content="#f6f4ee" data-page-node-id="UMkXe5Q2UB69OrY7gSvnSd">
+  <title>云边泛起涟漪录</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+    html, body {
+      width: 100%;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    body {
+      font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background: linear-gradient(160deg, #f6f4ee 0%, #ece6d8 50%, #d9d0bd 100%);
+      color: #3a3a3a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+      position: relative;
+    }
+
+    /* 顶部淡淡的云 */
+    body::before {
+      content: "";
+      position: fixed;
+      top: -120px;
+      right: -80px;
+      width: 360px;
+      height: 360px;
+      background: radial-gradient(circle, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0) 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    body::after {
+      content: "";
+      position: fixed;
+      bottom: -150px;
+      left: -100px;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(180, 165, 130, 0.18) 0%, rgba(180, 165, 130, 0) 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .wrap {
+      position: relative;
+      z-index: 1;
+      max-width: 380px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .brand {
+      font-size: 13px;
+      letter-spacing: 4px;
+      color: #8a8275;
+      margin-bottom: 36px;
+      font-weight: 300;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.78);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 24px;
+      padding: 36px 24px 28px;
+      box-shadow: 0 20px 60px rgba(120, 105, 80, 0.12), 0 2px 8px rgba(120, 105, 80, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+    }
+
+    .qr-box {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      border-radius: 18px;
+      overflow: hidden;
+      background: #ffffff;
+      padding: 14px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      margin-bottom: 22px;
+    }
+    .qr-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      color: #2c2c2c;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 12px;
+      letter-spacing: 3px;
+      color: #9a8e7a;
+      font-weight: 300;
+    }
+
+    .hint {
+      margin-top: 28px;
+      font-size: 12px;
+      color: #9a8e7a;
+      letter-spacing: 1px;
+      line-height: 1.8;
+    }
+    .hint .arrow {
+      display: inline-block;
+      margin: 0 6px;
+      color: #b8a984;
+    }
+
+    .footer {
+      margin-top: 36px;
+      font-size: 11px;
+      color: #b8ad96;
+      letter-spacing: 2px;
+    }
+
+    /* 涟漪动画 */
+    @keyframes ripple {
+      0% { transform: scale(0.9); opacity: 0.6; }
+      100% { transform: scale(1.6); opacity: 0; }
+    }
+    .pulse {
+      position: relative;
+      display: inline-block;
+    }
+    .pulse::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      margin: -4px 0 0 -4px;
+      border-radius: 50%;
+      background: rgba(180, 165, 130, 0.5);
+      animation: ripple 2.4s ease-out infinite;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body data-page-node-id="rcKmrLAXP4EyFPbUG10wGK">
+  <div class="wrap" data-page-node-id="KwGUv1IBBSIVMd5r4HSeXd">
+    <div class="brand" data-page-node-id="1Ei5gde2DHTBxcuMCnLwfW">云边泛起涟漪录</div>
+
+    <div class="card" data-page-node-id="JAcumgDtAp1m6iobvIePMU">
+      <div class="qr-box" data-page-node-id="J6SMwxmoaVEhq2UutJsoPT">
+        <img src="nfc-mini-program-code.jpg" alt="小程序码" data-page-node-id="BboxHcBGaw31gb6LXPhc2V" />
+      </div>
+      <div class="title" data-page-node-id="U7hTpuACYlyJ7sALuANzWo">云边泛起涟漪录</div>
+      <div class="subtitle" data-page-node-id="608eX7GRhEgnZkqSlS0Ndt">长按识别 · 启程</div>
+    </div>
+
+    <div class="hint" data-page-node-id="EBDVHtoF1Zz2mLavAsaKIi">
+      长按上方小程序码 <span class="arrow" data-page-node-id="I6DKBePG093nyVSNhXCdXX">→</span> 识别进入
+    </div>
+
+    <div class="footer" data-page-node-id="xHrKaQojkepb8IEcdxghbw">
+      <span class="pulse" data-page-node-id="qVFMvQaWXAjld464SBpsyQ">·</span> 长按识别进入小程序
+    </div>
+  </div>
+</body>
+</html>
